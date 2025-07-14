@@ -9,7 +9,7 @@ tree_file="standard.tree" && seed=1000 && for i in $(seq 1 1000); do fasta_file=
 ```
 
 ### Reference sequence mutation, mutation rate 5-20%
-mutate.py
+code.zip/mutate.py
 
 
 ### Sequence renaming
@@ -18,14 +18,14 @@ for file in *.fasta; do awk '/^>/{print ">"substr(FILENAME,1,length(FILENAME)-6)
 ```
 
 ### Merge five species
-merge.sh
+code.zip/merge.sh
 
 
 ### Extend 200bp
-200bp.py
+code.zip/200bp.py
 
 ### ngsngs
-ngs.sh
+code.zip/ngs.sh
 
 ### Rename sequences in mutated files >1-A
 ```
@@ -44,6 +44,8 @@ cat *.fasta >ref.fasta
 ---
 
 ### conventional(megahit+blast), for 1-10x and A-J respectively
+
+code.zip/
 
 runmega.sh
 
@@ -90,6 +92,8 @@ java -jar astral.5.7.1.jar -i tree_list.txt -o species_tree.nwk
 ---
 ## Tree accuracy statistics
 
+code.zip/
+
 remove_sup.py
 
 rf.py
@@ -104,6 +108,8 @@ result.zip/heatmap.xlsx
 
 ---
 ## Sequence accuracy statistics
+
+code.zip/
 
 score2.py
 
