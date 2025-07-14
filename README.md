@@ -1,7 +1,7 @@
 # paper_work
 The code and materials of GeneMiner2
 
-# Simulated data
+# Simulated pipeline code
 ### Generate sequence files
 ```
 mkdir -p fasta
@@ -96,8 +96,6 @@ remove_sup.py
 
 rf.py
 
-heatmap.py
-
 FN.py
 
 - Result files
@@ -113,11 +111,8 @@ score2.py
 
 count4.py
 
-duiji_level.py
-
 error_rate_cal.py
 
-error_rate_figs.py
 
 - Result files
 
