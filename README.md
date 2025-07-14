@@ -65,19 +65,17 @@ mkdir -p trim
 for f in *.fasta; do trimal -in "$f" -out "trim/${f%.fasta}_trimmed.fasta" -automated1; done
 ```
 
-## Concatenated tree
-### Concatenation
+## Tree building
+
 ```
 seqkit concat -n *.fasta > concatenated.fasta
 ```
 
-### Alignment + trimming
 ```
 mafft --auto concatenated.fasta > concatenated.aln
 trimal -automated1 -in concatenated.aln -out concatenated.trimmed.fasta
 ```
 
-### Tree building
 ```
 FastTree -nt -gtr -gamma -boot 500 concatenated.trimmed.fasta > supermatrix_tree.nwk
 
